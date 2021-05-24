@@ -21,5 +21,8 @@ pipeline {
                 }
             }
         }
+        stage('check') { 
+            sh 'ls -al'
+        }        
     }
 }
