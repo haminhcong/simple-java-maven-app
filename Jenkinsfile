@@ -22,7 +22,9 @@ pipeline {
             }
         }
         stage('check') { 
-            sh 'ls -al'
+            steps{
+                sh 'ls -al'
+            }
         }        
     }
 }
